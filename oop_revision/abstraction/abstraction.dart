@@ -33,6 +33,18 @@ class Bike extends Vehicle {
   }
 }
 
+class Bus extends Vehicle {
+  @override
+  void start() {
+    print('Bus started');
+  }
+
+  @override
+  void stop() {
+    print('Bus stopped');
+  }
+}
+
 void main() {
   Car car = Car();
   car.start();
@@ -41,4 +53,8 @@ void main() {
   Bike bike = Bike();
   bike.start();
   bike.stop();
+
+  Bus bus = Bus();
+  bus.start();
+  bus.stop();
 }
